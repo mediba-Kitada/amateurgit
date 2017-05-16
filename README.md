@@ -1,0 +1,2 @@
+# amateurgit
+アマチュアGit
