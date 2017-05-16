@@ -13,7 +13,7 @@ amateurgit
 - 既にインストールしている場合は、アップデート
 
 ```zsh
-$ brewww update
+$ brew update
 ```
 
 ### Git
@@ -52,7 +52,7 @@ $ git clone mediba-kitada/amateurgit
 ## Usage
 
 ```
-$ ndenv exec node index.js
+$ node index.js
 15...
 14...
 カウントダウンでエラーが起こった:13という数は不吉過ぎます
