@@ -1,4 +1,4 @@
-"use strict";
+"use strict"
 
 // Promiseの基本パターン
 function countdown (seconds) {
