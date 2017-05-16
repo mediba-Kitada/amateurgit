@@ -33,6 +33,7 @@ $ git config --local user.email kitada@mediba.jp
 ### ndenv
 
 - [ndenv](https://github.com/riywo/ndenv)
+- [node-build](https://github.com/riywo/node-build)
 
 ```
 % ndenv installl v4.3.0
