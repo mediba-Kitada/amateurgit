@@ -46,7 +46,7 @@ $ git config --local user.email kitada@mediba.jp
 ### リポジトリ
 
 ```
-$ git clone mediba-kitada/amateurgit
+$ git clone https://github.com/mediba-Kitada/amateurgit.git 
 ```
 
 ## Usage
