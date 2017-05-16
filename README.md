@@ -24,6 +24,10 @@ $ brew install git
 
 # 既にインストールしている場合は、アップデート
 $ brew upgrade git
+
+# アカウント設定
+$ git config --local user.name "[mediba] Tsubasa Kitada"
+$ git config --local user.email kitada@mediba.jp
 ```
 
 ### ndenv
