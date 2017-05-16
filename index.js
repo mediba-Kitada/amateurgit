@@ -1,9 +1,9 @@
-'used strict'
+'use strict'
 
 // Promiseの基本パターン
 function countdown (seconds) {
   return new Promise((resolve, reject) => {
-    const timeoutId = []
+    const timeoutIds = []
     for (let i = seconds; i >= 0; i--) {
       timeoutIds.push(setTimeout(
         () => {

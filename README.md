@@ -13,7 +13,7 @@ amateurgit
 - 既にインストールしている場合は、アップデート
 
 ```zsh
-$ brewww update
+$ brew update
 ```
 
 ### Git
@@ -23,7 +23,7 @@ $ brewww update
 $ brew install git
 
 # 既にインストールしている場合は、アップデート
-$ brew upgraade git
+$ brew upgrade git
 
 # アカウント設定
 $ git config --local user.name "[mediba] Tsubasa Kitada"
@@ -35,7 +35,7 @@ $ git config --local user.email kitada@mediba.jp
 - [ndenv](https://github.com/riywo/ndenv)
 
 ```
-% ndenv installl v4.3.0
+% ndenv install v4.3.0
 ```
 
 ### GitHub
