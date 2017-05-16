@@ -23,7 +23,7 @@ $ brew update
 $ brew install git
 
 # 既にインストールしている場合は、アップデート
-$ brew upgraade git
+$ brew upgrade git
 
 # アカウント設定
 $ git config --local user.name "[mediba] Tsubasa Kitada"
