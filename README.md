@@ -46,13 +46,13 @@ $ ndenv install v4.3.0
 ### リポジトリ
 
 ```
-$ git clone mediba-kitada/amateurgit
+$ git clone https://github.com/mediba-Kitada/amateurgit.git 
 ```
 
 ## Usage
 
 ```
-$ ndenv exec node index.js
+$ node index.js
 15...
 14...
 カウントダウンでエラーが起こった:13という数は不吉過ぎます
