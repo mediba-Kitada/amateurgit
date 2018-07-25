@@ -23,13 +23,17 @@ function countdown (seconds) {
 }
 
 // thenメソッドには2つの引数を指定する
-countdown(15).then(
-  // onRejectedのときに行いたい処理
-  () => {
-    console.log('カウントダウン成功')
-  },
-  // onRejectedのときに行いたい処理
-  (err) => {
-    console.log('カウントダウンでエラーが起こった:' + err.message)
-  }
-)
+function main() {
+  countdown(15).then(
+    // onRejectedのときに行いたい処理
+    () => {
+      console.log('カウントダウン成功')
+    },
+    // onRejectedのときに行いたい処理
+    (err) => {
+      console.log('カウントダウンでエラーが起こった:' + err.message)
+    }
+  )
+}
+
+main()
