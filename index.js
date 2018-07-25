@@ -25,7 +25,7 @@ async function countdown (seconds) {
 }
 
 // countdownメソッドには1つの引数を指定する
-function main() {
+async function main() {
   try {
     await countdown(15)
     // onRejectedのときに行いたい処理
