@@ -1,7 +1,9 @@
-'used strict'
+'use strict'
+
+
 
 // Promiseの基本パターン
-function countdown (seconds) {
+async function countdown (seconds) {
   return new Promise((resolve, reject) => {
     const timeoutIds = []
     for (let i = seconds; i >= 0; i--) {
@@ -23,7 +25,7 @@ function countdown (seconds) {
 }
 
 // countdownメソッドには1つの引数を指定する
-async function main() {
+function main() {
   try {
     await countdown(15)
     // onRejectedのときに行いたい処理
