@@ -3,6 +3,11 @@ amateurgit
 
 アマチュアGit
 
+## 目標
+
+- 適切なPull Requestを投げられるようになる
+- 最新のNode.jsを知る
+
 ## Install
 
 - Max OSXおんりー
@@ -49,7 +54,7 @@ $ ssh-keygen -t rsa -C kitada@mediba.jp
 - [node-build](https://github.com/riywo/node-build)
 
 ```
-$ ndenv installl v4.3.0
+$ ndenv installl v8.10.0
 ```
 
 ### リポジトリ
@@ -58,7 +63,11 @@ $ ndenv installl v4.3.0
 $ git clone mediba-kitada/amateurgit
 ```
 
-## Usage
+## 課題
+
+### No1
+
+- 下記の通り動作するように修正し、Pull Requestを`master`ブランチに投げてください :pray:
 
 ```
 $ ndenv exec node index.js
@@ -66,3 +75,8 @@ $ ndenv exec node index.js
 14...
 カウントダウンでエラーが起こった:13という数は不吉過ぎます
 ```
+
+### No2
+
+- `countdown`関数を`async`関数として実装し、`await`式を用いてコールしてください :pray:
+- また、`try...catch`構文でエラーハンドリングを実施してください :pray:
