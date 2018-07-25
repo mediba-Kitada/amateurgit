@@ -22,18 +22,16 @@ function countdown (seconds) {
   })
 }
 
-// thenメソッドには2つの引数を指定する
-function main() {
-  countdown(15).then(
+// countdownメソッドには1つの引数を指定する
+async function main() {
+  try {
+    await countdown(15)
     // onRejectedのときに行いたい処理
-    () => {
-      console.log('カウントダウン成功')
-    },
+    console.log('カウントダウン成功')
+  } catch (err) {
     // onRejectedのときに行いたい処理
-    (err) => {
-      console.log('カウントダウンでエラーが起こった:' + err.message)
-    }
-  )
+    console.log('カウントダウンでエラーが起こった:' + err.message)
+  }
 }
 
 main()
