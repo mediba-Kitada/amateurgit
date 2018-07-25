@@ -1,9 +1,11 @@
-'used strict'
+'use strict'
+
+
 
 // Promiseの基本パターン
-function countdown (seconds) {
+async function countdown (seconds) {
   return new Promise((resolve, reject) => {
-    const timeoutId = []
+    const timeoutIds = []
     for (let i = seconds; i >= 0; i--) {
       timeoutIds.push(setTimeout(
         () => {
@@ -22,18 +24,16 @@ function countdown (seconds) {
   })
 }
 
-// thenメソッドには2つの引数を指定する
-function main() {
-  countdown(15).then(
+// countdownメソッドには1つの引数を指定する
+async function main() {
+  try {
+    await countdown(15)
     // onRejectedのときに行いたい処理
-    () => {
-      console.log('カウントダウン成功')
-    },
+    console.log('カウントダウン成功')
+  } catch (err) {
     // onRejectedのときに行いたい処理
-    (err) => {
-      console.log('カウントダウンでエラーが起こった:' + err.message)
-    }
-  )
+    console.log('カウントダウンでエラーが起こった:' + err.message)
+  }
 }
 
 main()
